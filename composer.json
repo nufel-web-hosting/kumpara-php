@@ -1,0 +1,44 @@
+{
+    "name": "kumpara/kumpara-php",
+    "description": "The official PHP SDK for Kumpara, the Norwegian invoicing API: create and send invoices with KID, PDF and webhooks from your own code.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["kumpara", "invoice", "invoicing", "faktura", "kid", "norway", "webhooks", "sdk", "api"],
+    "homepage": "https://kumpara.no/docs",
+    "authors": [
+        {
+            "name": "Nufel Web Hosting",
+            "homepage": "https://kumpara.no"
+        }
+    ],
+    "support": {
+        "email": "support@kumpara.no",
+        "docs": "https://kumpara.no/docs",
+        "issues": "https://github.com/nufel-web-hosting/kumpara-php/issues",
+        "source": "https://github.com/nufel-web-hosting/kumpara-php"
+    },
+    "require": {
+        "php": ">=8.1",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kumpara\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kumpara\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

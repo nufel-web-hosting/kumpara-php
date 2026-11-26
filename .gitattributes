@@ -1,0 +1,11 @@
+# Same line endings for everyone
+* text=auto eol=lf
+
+# Left out of the Composer package (users only need src/)
+/.github export-ignore
+/tests export-ignore
+/examples export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/phpunit.xml.dist export-ignore
+/CHANGELOG.md export-ignore
